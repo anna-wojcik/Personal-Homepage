@@ -1,7 +1,7 @@
 import photo from "../images/profile.jpg";
 import { email } from "../email";
 import { ReactComponent as Envelope } from "../images/envelope.svg";
-import { StyledHeader, Image, Caption, Title, Description, Button } from "./styled";
+import { StyledHeader, Image, Caption, Title, Description, EmailLink } from "./styled";
 
 export const Header = () => (
     <StyledHeader>
@@ -12,10 +12,10 @@ export const Header = () => (
             <Description>
                 I'm a React Frontend Developer and a Computer Science Student at Lublin University of Technology.
             </Description>
-            <Button href={`mailto:${email}`}>
+            <EmailLink href={`mailto:${email}`}>
                 <Envelope />
                 Hire me
-            </Button>
+            </EmailLink>
         </div>
     </StyledHeader>
 );

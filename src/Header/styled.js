@@ -51,7 +51,7 @@ export const Description = styled.p`
     }
 `;
 
-export const Button = styled.a`
+export const EmailLink = styled.a`
     margin-top: 32px;
     width: 154px;
     height: 49px;
