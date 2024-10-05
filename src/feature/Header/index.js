@@ -1,6 +1,6 @@
-import photo from "../images/profile.jpg";
-import { email } from "../email";
-import { ReactComponent as Envelope } from "../images/envelope.svg";
+import photo from "../../images/profile.jpg";
+import { email } from "../../email";
+import { ReactComponent as Envelope } from "../../images/envelope.svg";
 import { StyledHeader, Image, Caption, Title, Description, EmailLink } from "./styled";
 
 export const Header = () => (

@@ -13,7 +13,7 @@ export const ThemeSwitch = () => {
     return (
         <Wrapper>
             <div>
-                {width > 767 ? `DARK MODE ${isDark ? "ON" : "OFF"}` : ""}
+                {width > 1024 ? `DARK MODE ${isDark ? "ON" : "OFF"}` : ""}
             </div>
             <Button onClick={() => dispatch(toggleDark())}>
                 <Box $flicker $move={isDark}></Box>

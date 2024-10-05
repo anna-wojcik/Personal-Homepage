@@ -1,13 +1,19 @@
-import { Container } from "./Container";
-import Header from "./Header";
-import ThemeSwitch from "./common/ThemeSwitch";
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyle } from './GlobalStyle';
+import { themeLight, themeDark } from './theme';
+import { useSelector } from 'react-redux';
+import { selectIsDark } from './common/themeSlice';
+import PersonalHomepage from "./feature/PersonalHomepage";
+
 
 function App() {
+  const isDark = useSelector(selectIsDark);
+
   return (
-    <Container>
-      <ThemeSwitch />
-      <Header />
-    </Container>
+    <ThemeProvider theme={isDark ? themeDark : themeLight}>
+      <GlobalStyle />
+      <PersonalHomepage />
+    </ThemeProvider>
   );
 }
 

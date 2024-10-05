@@ -21,13 +21,12 @@ export const Image = styled.img`
     width: 30vw;
     min-width: 128px;
     min-height: 128px;
-    
 `;
 
 export const Caption = styled.div`
     font-weight: 700;
     font-size: 12px;
-    color: ${({ theme }) => theme.color.gray};
+    color: ${({ theme }) => theme.colors.content};
 `;
 
 export const Title = styled.h1`
@@ -35,9 +34,12 @@ export const Title = styled.h1`
     font-size: 38px;
     margin-top: 12px;
     margin-bottom: 36px;
+    color: ${({ theme }) => theme.colors.title};
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
         font-size: 22px;
+        margin-top: 8px;
+        margin-bottom: 16px;
     }
 `;
 
@@ -45,6 +47,7 @@ export const Description = styled.p`
     font-weight: 400;
     font-size: 20px;
     margin: 0;
+    color: ${({ theme }) => theme.colors.content};
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
         font-size: 17px;
@@ -55,10 +58,9 @@ export const EmailLink = styled.a`
     margin-top: 32px;
     width: 154px;
     height: 49px;
-    background: ${({ theme }) => theme.color.blue};
-    border: 1px solid ${({ theme }) => theme.color.iron};
+    background: ${({ theme }) => theme.colors.buttonHireMe.background};
     border-radius: 4px;
-    color: ${({ theme }) => theme.color.white};
+    color: ${({ theme }) => theme.colors.buttonHireMe.content};
     font-weight: 600;
     display: flex;
     justify-content: center;
@@ -69,17 +71,20 @@ export const EmailLink = styled.a`
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
         font-size: 17px;
+        margin-top: 24px;
+        width: 138px;
+        height: 46px;
     }
 
     &:hover {
-        box-shadow: 0px 2px 0px 0px #14462033 inset;
+        box-shadow: 0px 2px 0px 0px ${({ theme }) => theme.colors.buttonHireMe.hover} inset;
     }
 
     &:focus {
         border: 1px solid rgba(209, 213, 218, 0.3);
-        box-shadow: -2px -2px 0px 0px #8CC2FF;
-        box-shadow: 2px 2px 0px 0px #8CC2FF;
-        box-shadow: -2px 2px 0px 0px #8CC2FF;
-        box-shadow: 2px -2px 0px 0px #8CC2FF;
+        box-shadow: -2px -2px 0px 0px ${({ theme }) => theme.colors.buttonHireMe.focus};
+        box-shadow: 2px 2px 0px 0px ${({ theme }) => theme.colors.buttonHireMe.focus};
+        box-shadow: -2px 2px 0px 0px ${({ theme }) => theme.colors.buttonHireMe.focus};
+        box-shadow: 2px -2px 0px 0px ${({ theme }) => theme.colors.buttonHireMe.focus};
     }
 `;

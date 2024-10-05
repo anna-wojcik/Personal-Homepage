@@ -3,18 +3,24 @@ import styled, { css } from "styled-components";
 export const Wrapper = styled.div`
     display: flex;
     justify-content: flex-end;
-    color: ${({ theme }) => theme.color.gray};
+    color: ${({ theme }) => theme.colors.content};
     gap: 12px;
     align-items: center;
     font-weight: 700;
     font-size: 12px;
+    margin-top: 120px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px){
+        margin-top: 22px;
+    }
 `;
 
 export const Button = styled.button`
     width: 48px;
     height: 26px;
-    background: ${({ theme }) => theme.color.mercury};
-    border: 1px solid ${({ theme }) => theme.color.gray};        border-radius: 13px;
+    background: ${({ theme }) => theme.colors.themeSwitch.background};
+    border: 1px solid ${({ theme }) => theme.colors.themeSwitch.border};        
+    border-radius: 13px;
     position: relative;  
     cursor: pointer;      
 `;
@@ -22,7 +28,7 @@ export const Button = styled.button`
 export const Box = styled.div`
     ${({ $flicker }) => $flicker && css`
         position: absolute; 
-        background: ${({ theme }) => theme.color.gray};
+        background: ${({ theme }) => theme.colors.themeSwitch.flickerBackground};
         width: 20px;
         height: 20px;
         border-radius: 10px;

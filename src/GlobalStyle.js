@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: "Inter", sans-serif;
-        background: ${({ theme }) => theme.color.iron};
+        background: ${({ theme }) => theme.colors.background};
         min-height: 100vh;
         display: flex;
         flex-direction: column;
