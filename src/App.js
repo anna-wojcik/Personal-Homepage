@@ -5,6 +5,7 @@ import ThemeSwitch from "./common/ThemeSwitch";
 function App() {
   return (
     <Container>
+      <ThemeSwitch />
       <Header />
     </Container>
   );
