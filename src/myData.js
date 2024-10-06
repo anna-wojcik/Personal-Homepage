@@ -36,4 +36,5 @@ export const toLearn = [
     "TypeScript",
     "Node.js",
     "Java",
+    "Swift",
 ];
