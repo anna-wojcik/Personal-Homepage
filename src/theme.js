@@ -1,5 +1,6 @@
 const colorName = {
     white: "#FFFFFF",
+    semiIron: "#D1D5DA1A",
     iron: "#D1D5DA4D",
     mercury: "#E5E5E5",
     gray: "#6E7E91",
@@ -9,6 +10,7 @@ const colorName = {
     blue: "#0366D6",
     parsley: "#14462033",
     mineShaft: "#252525",
+    tundora: "#363636B8",
 };
 
 const common = {
@@ -35,6 +37,13 @@ export const themeLight = {
             border: colorName.gray,
             flickerBackground: colorName.gray,
         },
+        section: {
+            title: colorName.mineShaft,
+            content: colorName.gray,
+            background: colorName.white,
+            bullet: colorName.blue,
+            borderHeader: colorName.iron,
+        },
     },
 };
 
@@ -55,6 +64,13 @@ export const themeDark = {
             background: colorName.iron,
             border: colorName.white,
             flickerBackground: colorName.white,
-        }
+        },
+        section: {
+            title: colorName.white,
+            content: colorName.white,
+            background: colorName.tundora,
+            bullet: colorName.dodgerBlue,
+            borderHeader: colorName.semiIron,
+        },
     },
 };
