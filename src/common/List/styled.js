@@ -7,6 +7,17 @@ export const StyledList = styled.ul`
     grid-template-columns: repeat(3, 1fr);
     column-gap: 90px;
     row-gap: 8px;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
+        font-size: 14px;
+        grid-template-columns: 1fr 1fr;
+    };
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.smallMax}px) {
+        font-size: 14px;
+        grid-template-columns: 1fr;
+        margin-bottom: 0;
+    };
 `;
 
 export const Item = styled.li`
@@ -14,5 +25,5 @@ export const Item = styled.li`
 
     &::marker {
         color: ${({ theme }) => theme.colors.section.bullet};
-    }
+    };
 `;
