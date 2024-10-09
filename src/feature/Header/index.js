@@ -1,7 +1,8 @@
 import photo from "../../images/profile.jpg";
 import { email } from "../../email";
 import { ReactComponent as Envelope } from "../../images/envelope.svg";
-import { StyledHeader, Image, Caption, Title, Description, EmailLink } from "./styled";
+import { StyledHeader, Image, Caption, Title, Description } from "./styled";
+import { RedirectButton } from "../RedirectButton";
 
 export const Header = () => (
     <StyledHeader>
@@ -12,10 +13,10 @@ export const Header = () => (
             <Description>
                 I'm a React Frontend Developer and a Computer Science Student at Lublin University of Technology.
             </Description>
-            <EmailLink href={`mailto:${email}`}>
+            <RedirectButton href={`mailto:${email}`}>
                 <Envelope />
                 Hire me
-            </EmailLink>
+            </RedirectButton>
         </div>
     </StyledHeader>
 );

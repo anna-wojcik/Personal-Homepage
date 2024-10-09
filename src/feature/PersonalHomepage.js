@@ -1,10 +1,11 @@
 import { Container } from "../common/Container";
-import Section from "../common/Section";
-import ThemeSwitch from "../common/ThemeSwitch";
+import Section from "./Section";
+import ThemeSwitch from "./ThemeSwitch";
 import Header from "./Header";
 import skills from "../images/skills.png";
 import rocket from "../images/rocket.png";
 import { mySkills, toLearn } from "../myData";
+import Portfolio from "./Portfolio";
 
 function PersonalHomepage() {
     return (
@@ -21,6 +22,7 @@ function PersonalHomepage() {
                 icon={rocket}
                 listOfData={toLearn}
             />
+            <Portfolio />
         </Container>
     );
 };

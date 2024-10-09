@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { toggleDark, selectIsDark } from "../themeSlice";
 import { ReactComponent as SunLight } from "../../images/sunLight.svg";
 import { ReactComponent as SunDark } from "../../images/sunDark.svg";
-import { useWindowDimensions } from "../useWindowDimensions";
+import { useWindowDimensions } from "../../useWindowDimensions";
 
 export const ThemeSwitch = () => {
     const isDark = useSelector(selectIsDark);

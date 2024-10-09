@@ -1,4 +1,4 @@
-import List from "../List";
+import List from "./List";
 import { Header, StyledSection, Image } from "./styled";
 
 const Section = ({ title, icon, listOfData }) => (

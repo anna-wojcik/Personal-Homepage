@@ -4,6 +4,7 @@ export const StyledSection = styled.section`
     background: ${({ theme }) => theme.colors.section.background};
     border-radius: 4px;
     margin-top: 72px;
+    margin-bottom: 72px;
     padding: 32px;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.mobileMax}px) {
