@@ -6,6 +6,7 @@ import skills from "../images/skills.png";
 import rocket from "../images/rocket.png";
 import { mySkills, toLearn } from "../myData";
 import Portfolio from "./Portfolio";
+import Footer from "./Footer";
 
 function PersonalHomepage() {
     return (
@@ -23,6 +24,7 @@ function PersonalHomepage() {
                 listOfData={toLearn}
             />
             <Portfolio />
+            <Footer />
         </Container>
     );
 };

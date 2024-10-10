@@ -1,26 +1,11 @@
 import styled from "styled-components";
-import { ReactComponent as GitHubLight } from "../../images/githubLight.svg";
-import { ReactComponent as GitHubDark } from "../../images/githubDark.svg";
 
 export const Wrapper = styled.div`
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     color: ${({ theme }) => theme.colors.title};
-`;
-
-export const GithubLightIcon = styled(GitHubLight)`
-    @media(max-width: ${({ theme }) => theme.breakpoint.smallMax}px) {
-        height: 32px;
-        width: 32px;
-    }
-`;
-
-export const GithubDarkIcon = styled(GitHubDark)`
-    @media(max-width: ${({ theme }) => theme.breakpoint.smallMax}px) {
-        height: 32px;
-        width: 32px;
-    }
 `;
 
 export const SubHeader = styled.h2`

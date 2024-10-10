@@ -1,13 +1,12 @@
-import { useSelector } from "react-redux";
-import { Wrapper, GithubLightIcon, GithubDarkIcon, SubHeader, Paragraph } from "./styled";
-import { selectIsDark } from "../themeSlice";
+import { Wrapper, SubHeader, Paragraph } from "./styled";
 import ListProjects from "./ListProjects";
 import Loading from "./Loading";
 import Error from "./Error";
 import { useRepositories } from "./useRepositiories";
+import { socials } from "../socials";
+import { LinkIcon } from "../LinkIcon";
 
 export const Portfolio = () => {
-    const isDark = useSelector(selectIsDark);
     const data = useRepositories();
 
     const getContainerState = () => {
@@ -24,12 +23,19 @@ export const Portfolio = () => {
         }
     };
 
+    const gitHubSocial = socials.find(social => social.name === "GitHub");
+
     return (
         <article>
             <Wrapper>
-                <a href="https://github.com/anna-wojcik?tab=repositories" target="_blank" rel="noopener noreferrer">
-                    {isDark ? <GithubDarkIcon /> : <GithubLightIcon />}
-                </a>
+                <LinkIcon
+                    $portfolio
+                    href={gitHubSocial.url}
+                    title={gitHubSocial.name}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    <gitHubSocial.Icon $portfolio/>
+                </LinkIcon>
                 <SubHeader>Portfolio</SubHeader>
                 <Paragraph>My recent projects</Paragraph>
                 {getContainerState()}

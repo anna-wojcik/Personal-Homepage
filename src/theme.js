@@ -61,6 +61,14 @@ export const themeLight = {
         error: {
             title: colorName.mineShaft,
             content: colorName.mineShaft,
+        },
+        portfolioIcon: {
+            colorDefault: colorName.blue,
+            colorHover: colorName.mineShaft,
+        },
+        linkIcon: {
+            colorDefault: colorName.mineShaft,
+            colorHover: colorName.blue,
         }
     },
 };
@@ -101,6 +109,14 @@ export const themeDark = {
         error: {
             title: colorName.white,
             content: colorName.white,
+        },
+        portfolioIcon: {
+            colorDefault: colorName.dodgerBlue,
+            colorHover: colorName.white,
+        },
+        linkIcon: {
+            colorDefault: colorName.white,
+            colorHover: colorName.dodgerBlue,
         }
     },
 };
