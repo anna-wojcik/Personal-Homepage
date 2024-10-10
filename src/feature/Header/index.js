@@ -11,7 +11,7 @@ export const Header = () => (
         <div>
             <PersonalInformation
                 isFooter={false}
-                caption="This is"
+                caption="THIS IS"
                 title="Anna Wójcik"
                 description="I'm a React Frontend Developer and I study Computer Science at the Faculity of Electrical Engineering and Computer Science of the Lublin University of Technology."
             />
