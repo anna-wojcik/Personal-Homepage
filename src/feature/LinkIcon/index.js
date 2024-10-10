@@ -3,8 +3,6 @@ import styled, { css } from "styled-components"
 export const LinkIcon = styled.a`
     color: ${({ theme }) => theme.colors.linkIcon.colorDefault};
     transition: color 0.3s;
-    width: 48px;
-    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
