@@ -1,6 +1,6 @@
 import { Wrapper, Button, Box } from "./styled";
 import { useDispatch, useSelector } from "react-redux";
-import { toggleDark, selectIsDark } from "../themeSlice";
+import { toggleDark, selectIsDark } from "./themeSlice";
 import { ReactComponent as SunLight } from "../../images/sunLight.svg";
 import { ReactComponent as SunDark } from "../../images/sunDark.svg";
 import { useWindowDimensions } from "../../useWindowDimensions";

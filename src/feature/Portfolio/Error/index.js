@@ -2,7 +2,7 @@ import { Wrapper, Header, Paragraph, SecondaryWrapper } from "./styled";
 import { ReactComponent as DangerIconLight } from "../../../images/dangerLight.svg";
 import { ReactComponent as DangerIconDark } from "../../../images/dangerDark.svg";
 import { useSelector } from "react-redux";
-import { selectIsDark } from "../../themeSlice";
+import { selectIsDark } from "../../ThemeSwitch/themeSlice";
 import { RedirectButton } from "../../RedirectButton";
 
 export const Error = () => {
