@@ -13,7 +13,7 @@ export const StyledSection = styled.section`
     }
 `;
 
-export const Header = styled.h1`
+export const Header = styled.h2`
     color:  ${({ theme }) => theme.colors.section.title};
     margin: 0;
     padding-bottom: 14px;
