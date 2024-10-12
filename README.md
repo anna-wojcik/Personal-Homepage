@@ -1,6 +1,53 @@
-# Getting Started with Create React App
-
+# Personal Homepage
+This website depicts my Personal Homepage. The site presents my skills, thing which I want to learn, the projects I created and contact details.
+<br>
+Here is a working live demo: https://anna-wojcik.github.io/Personal-Homepage/.
+<br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Table of Contents
+* [Site](#site)
+* [Gif](#gif)
+* [Technologies Used](#technologies-used)
+* [Available Scripts](#available-scripts)
+* [Acknowledgements](#acknowledgements)
+* [Author](#author)
+
+## Site
+### Personal information & Changing theme
+The first part of the website are personal information about me. At the bottom you can find blue button to write e-mail to me.
+<br>
+In the top right corner is button to change the theme of the page.
+![alt text](personal-homepage-info.png)
+
+### Skills & What I want to learn
+Second part of the page depicts my skills and things I want to learn in the foreseeable future. 
+![alt text](perosnal-homepage-skills&tolearn.png)
+
+### Projects
+Third part of the page is a showcase of my projects. You can find a link to the project. First link, named "Demo", will take you to website, while second link "Code" will sends you to GitHub repository.
+![alt text](personal-homepage-portfolio.png)
+
+### Contact
+In last part you can find contact details and a couple ways to send me a message: e-mail, GitHub, Facebook, LinkedIn.
+![alt text](personal-homepage-contact.png)
+
+## Gif
+![alt text](personal-homepage.gif)
+
+## Technologies Used
+- JavaScript ES6
+- Redux - Toolkit
+- Axios
+- Styled Components
+- Hooks (useState, useEffect)
+- Custom Hooks
+- HTML 5
+- CSS 3
+- Media Queries
+- Normalize CSS
+- BEM Convention
+- Grid
 
 ## Available Scripts
 
@@ -39,32 +86,8 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Acknowledgements
+This website was created thanks to the skills gained from the course "Frontend Developer from the basis" online programming school YouCode.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Author
+Created by Anna Wójcik.
