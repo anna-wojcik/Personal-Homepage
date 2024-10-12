@@ -8,6 +8,7 @@ import { LinkIcon } from "../LinkIcon";
 
 export const Portfolio = () => {
     const data = useRepositories();
+    console.log(data.repositoriesData);
 
     const getContainerState = () => {
         if (data.state === "loading") {
@@ -17,7 +18,7 @@ export const Portfolio = () => {
                 </div>
             )
         } else if (data.state === "success") {
-            return <ListProjects />
+            return <ListProjects projects={data.repositoriesData}/>
         } else if (data.state === "error") {
             return <Error />
         }

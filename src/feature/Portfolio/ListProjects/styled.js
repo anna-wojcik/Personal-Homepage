@@ -16,7 +16,7 @@ export const ProjectsList = styled.ul`
     }
 `;
 
-export const Project = styled.li`
+export const ProjectItem = styled.li`
     max-width: 592px;
     min-width: 288px;
     background:  ${({ theme }) => theme.colors.listProduct.background};
@@ -24,18 +24,24 @@ export const Project = styled.li`
     border-radius: 4px;
     padding: 56px;
 
-    @media(max-width: ${({ theme }) => theme.breakpoint.largeMax}px) {
-        padding: 24px;
-    }
-`;
-
-export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.largeMax}px) {
+        padding: 24px;
+        width: 358px;
+    }
+
+    @media(max-width: ${({ theme }) => theme.breakpoint.smallMax}px) {
+        width: 238px;
+    }
 `;
 
-export const WrapperLink = styled(Wrapper)`
+export const WrapperLink = styled.div`
+    display: flex;
+    flex-direction: column;
+    text-align: left;
     gap: 8px;
 
     @media(max-width: ${({ theme }) => theme.breakpoint.largeMax}px) {
