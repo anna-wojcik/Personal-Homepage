@@ -49,7 +49,7 @@ export const WrapperLink = styled.div`
     }
 `;
 
-export const Header = styled.h1`
+export const Header = styled.h3`
     font-size: 24px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.listProduct.title};

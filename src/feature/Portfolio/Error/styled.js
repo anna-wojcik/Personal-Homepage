@@ -15,7 +15,7 @@ export const SecondaryWrapper = styled.div`
     max-width: 420px;
 `;
 
-export const Header = styled.h1`
+export const Header = styled.h3`
     font-size: 24px;
     font-weight: 700;
     margin-top: 16px;
